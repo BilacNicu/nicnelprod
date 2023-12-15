@@ -1,5 +1,5 @@
 import './styles/PortofoliuPageAll.css'
-import mainTextPicturePic from "../src/assets/portofoliu.webp";
+import mainTextPicturePic from "./assets/portofoliu.webp";
 import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard"
 import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
    CamereDeZiBtn, MailBtn, PhoneBtn, LocationBtn,
