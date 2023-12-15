@@ -7,6 +7,8 @@ import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
 import AnimatedPage from './components/animations/AnimationPage';
 import { useEffect, useState } from 'react';
 import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard";
+import logo from "../public/react.png";
+import mainTextPicturePicDormitoare from "./assets/dormitor.jpg";
 
 const DormitoarePage = () => {
 
@@ -52,7 +54,7 @@ const DormitoarePage = () => {
     <AnimatedPage>
       <OverlayGalleryStandard isOpen={isOverlayGalleryStandardOpen} onClose={() => setIsOverlayGalleryStandardOpen(!isOverlayGalleryStandardOpen)}/>
     <div className='portofoliuDormitoareDiv'>
-       <img src="../src/assets/dormitor.jpg" className='mainTextPicturePicDormitoare'/>
+       <img src={mainTextPicturePicDormitoare} className='mainTextPicturePicDormitoare'/>
       <div className="mainTextAndPictureDormitoare">
         <div className="mainTextAndPictureTopSideDormitoare">
           <h className="mainTextAndPictureTitleDormitoare">Dormitoare</h>
@@ -136,7 +138,7 @@ const DormitoarePage = () => {
 
     <div className="footer">
   <div className="footerBarLeftSide">
-   <img src='/react.png' className='logo'></img>
+   <img src={logo} className='logo'></img>
    <p className="copyright">NIC NEL PROD © Toate Drepturile Rezervate</p>
   </div>
   <div className="footerBarRightSide">

@@ -6,6 +6,7 @@ import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
   import AnimatedPage from './components/animations/AnimationPage';
   import { useEffect, useState } from 'react';
   import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard";
+  import mainTextPicturePic from "./assets/officeMain.jpg";
 
 const BirouriPage = () => {
 
@@ -52,7 +53,7 @@ const BirouriPage = () => {
     <AnimatedPage>
       <OverlayGalleryStandard isOpen={isOverlayGalleryStandardOpen} onClose={() => setIsOverlayGalleryStandardOpen(!isOverlayGalleryStandardOpen)}/>
     <div className='portofoliuBirouriDiv'>
-       <img src="../src/assets/officeMain.jpg" className='mainTextPicturePic'/>
+       <img src={mainTextPicturePic} className='mainTextPicturePic'/>
       <div className="mainTextAndPictureBirouri">
         <div className="mainTextAndPictureTopSideBirouri">
           <h className="mainTextAndPictureTitleBirouri">Birouri</h>

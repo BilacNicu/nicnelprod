@@ -1,4 +1,5 @@
 import './styles/PortofoliuPageAll.css'
+import logo from "../public/react.png";
 import mainTextPicturePic from "./assets/portofoliu.webp";
 import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard"
 import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
@@ -350,7 +351,7 @@ const PortofoliuPageAll = () => {
 </div>
     <div className="footer">
   <div className="footerBarLeftSide">
-   <img src='/react.png' className='logo'></img>
+   <img src={logo} className='logo'></img>
    <p className="copyright">NIC NEL PROD © Toate Drepturile Rezervate</p>
   </div>
   <div className="footerBarRightSide">

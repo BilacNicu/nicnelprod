@@ -6,6 +6,12 @@
     flex-direction: row;
     
 }
+
+.footerContact{
+    position: absolute;
+    left: -600px;
+}
+
 .intalnireSiContactDiv{
     height: 70vh;
     width: 60%;

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './styles/ContactPage.css'
-import {TrimiteIntalnireBtn} from "../src/Buttons";
+import {TrimiteIntalnireBtn, LocationBtn, MailBtn, PhoneBtn} from "../src/Buttons";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import TimePicker from 'react-time-picker';
 import 'react-time-picker/dist/TimePicker.css';
 import AnimatedPage from './components/animations/AnimationPage';
+import logo from "../public/react.png";
+import bgContact from "./assets/bgContact.PNG";
 
 const ContactPage = () => {
 
@@ -14,7 +16,18 @@ const ContactPage = () => {
     <AnimatedPage>
      <div className="contactPageDiv">
       <div className="bgcontainer">
-        <img src="../src/assets/bgContact.PNG" alt="" className="bgContact" />
+        <img src={bgContact} alt="" className="bgContact" />
+        <div className="footer footerContact">
+  <div className="footerBarLeftSide">
+   <img src={logo} className='logo'></img>
+   <p className="copyright">NIC NEL PROD © Toate Drepturile Rezervate</p>
+  </div>
+  <div className="footerBarRightSide">
+    <MailBtn />
+    <PhoneBtn />
+    <LocationBtn />
+  </div>
+</div>
       </div>
       <div className="intalnireSiContactDiv">
         <div className="intalnireDiv">
@@ -85,6 +98,7 @@ const ContactPage = () => {
         </div>
       </div>
      </div>
+
      </AnimatedPage>
   )
 }

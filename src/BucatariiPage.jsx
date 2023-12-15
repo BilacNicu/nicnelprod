@@ -7,7 +7,7 @@ import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
 import AnimatedPage from './components/animations/AnimationPage';
 import { useEffect, useState } from 'react';
 import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard";
-
+import mainTextPicturePicBucatarii from "./assets/bucatarie.jpg";
 
 const BucatariiPage = () => {
 
@@ -54,7 +54,7 @@ const BucatariiPage = () => {
     <AnimatedPage>
       <OverlayGalleryStandard isOpen={isOverlayGalleryStandardOpen} onClose={() => setIsOverlayGalleryStandardOpen(!isOverlayGalleryStandardOpen)}/>
     <div className='portofoliuBucatariiDiv'>
-       <img src="../src/assets/bucatarie.jpg" className='mainTextPicturePicBucatarii'/>
+       <img src={mainTextPicturePicBucatarii} className='mainTextPicturePicBucatarii'/>
       <div className="mainTextAndPictureBucatarii">
         <div className="mainTextAndPictureTopSideBucatarii">
           <h className="mainTextAndPictureTitleBucatarii">Bucatarii</h>

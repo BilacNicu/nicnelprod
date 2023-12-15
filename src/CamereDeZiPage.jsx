@@ -7,6 +7,7 @@ import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
    import { useEffect, useState } from 'react';
    import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard";
    import AnimatedPage from './components/animations/AnimationPage';
+import mainTextPicturePicCamereDeZi from "./assets/living.webp";
 
 const CamereDeZiPage = () => {
 
@@ -53,7 +54,7 @@ const CamereDeZiPage = () => {
     <AnimatedPage>
       <OverlayGalleryStandard isOpen={isOverlayGalleryStandardOpen} onClose={() => setIsOverlayGalleryStandardOpen(!isOverlayGalleryStandardOpen)}/>
     <div className='portofoliuCamereDeZiDiv'>
-       <img src="../src/assets/living.webp" className='mainTextPicturePicCamereDeZi'/>
+       <img src={mainTextPicturePicCamereDeZi} className='mainTextPicturePicCamereDeZi'/>
       <div className="mainTextAndPictureCamereDeZi">
         <div className="mainTextAndPictureTopSideCamereDeZi">
           <h className="mainTextAndPictureTitleCamereDeZi">Camere de Zi</h>

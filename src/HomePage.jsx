@@ -3,6 +3,7 @@ import backgroundVideo from '../src/assets/room3.mp4';
 import {ColectieBtn, ColectieBtn2, DespreNoiBtn, MailBtn, PhoneBtn, LocationBtn, ColectieBucatariiBtn, ColectieBDormitoareBtn, ColectieCamereDeZiBtn, ColectieBirouriBtn} from '../src/Buttons';
 import AnimatedPage from './components/animations/AnimationPage';
 import React, { useEffect } from 'react';
+import logo from "../public/react.png";
 
 const HomePage = () => {
 
@@ -153,7 +154,7 @@ const HomePage = () => {
 
 <div className="footer">
   <div className="footerBarLeftSide">
-   <img src='/react.png' className='logo'></img>
+   <img src={logo} className='logo'></img>
    <p className="copyright">NIC NEL PROD © Toate Drepturile Rezervate</p>
   </div>
   <div className="footerBarRightSide">
