@@ -59,7 +59,7 @@ function App() {
     <div className='content'>
     <AnimatePresence>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/acasa'>
           <HomePage />
         </Route>
         <Route path='/portofoliu'>

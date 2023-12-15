@@ -1,4 +1,5 @@
 import './styles/PortofoliuPageAll.css'
+import mainTextPicturePic from "../src/assets/portofoliu.webp";
 import {OverlayGalleryStandard} from "./styles/gallery/OverlayGalleryStandard"
 import {AllBtn, BirouriBtn, BucatariiBtn, DormitoareBtn,
    CamereDeZiBtn, MailBtn, PhoneBtn, LocationBtn,
@@ -81,7 +82,7 @@ const PortofoliuPageAll = () => {
   return (
     <AnimatedPage>
     <div className='portofoliuDiv'>
-       <img src="../src/assets/portofoliu.webp" className='mainTextPicturePic'/>
+       <img src={mainTextPicturePic} className='mainTextPicturePic'/>
       <div className="mainTextAndPicture">
         <div className="mainTextAndPictureTopSide">
           <h className="mainTextAndPictureTitle">Proiectele noastre</h>
