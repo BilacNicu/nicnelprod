@@ -1,0 +1,103 @@
+.overlayBgGS{
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 750vh;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlayContainerGS{
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image horizontally */
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 180px;
+    z-index: 10;
+    padding-top: 0px;
+    max-width: 950px;
+    max-height: 950px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.1s;
+}
+.overlayContainerGS.active{
+    opacity: 1;
+}
+
+.overlayControlsGS{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.leftArrow{
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url("/src/assets/arrowLeft.png");
+    background-size: 100% 100%;
+    transition: all 0.2s ease-in-out;
+}
+.leftArrow:hover{
+    height: 65px;
+    width: 65px;
+}
+
+.rightArrow{
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url("/src/assets/arrowRight.png");
+    background-size: 100% 100%;
+    transition: all 0.2s ease-in-out;
+
+}
+.rightArrow:hover{
+    height: 65px;
+    width: 65px;
+}
+.counter{
+    z-index: 20;
+    background-color: rgb(210, 180, 140);
+    color: black;
+    position: absolute;
+    top: -50px;
+    left: -500px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1300px){
+    .overlayContainerGS{
+        margin-top: 160px;
+        z-index: 10;
+        padding-top: 0px;
+        width: 600px;
+        height: 600px;
+    }
+}

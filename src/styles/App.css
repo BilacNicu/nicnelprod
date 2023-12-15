@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Helvetica Neu';
+  src: url('../assets/fonts/HelveticaNeue-Black.otf');
+}
+
+body{
+  height: 200vh;
+  width: 100vw;
+  min-width: 1500px;
+  background-color: #000511;
+  display: flex;
+  flex-direction: column;
+}
+.startDiv{
+  height: 100vh;
+  width: 100vw;
+  min-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start ;
+  z-index: -100;
+}
+.content{
+  z-index: 0;
+}
+.topDiv{
+  position: fixed;
+  height: 8vh;
+  max-height: 100px;
+  min-height: 80px;
+  width: 100vw;
+  min-width: 1500px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+}
+.topDivRightSide{
+  display: flex;
+  align-items: center;
+}
+.topDiv .logo{
+  height: 8vh;
+  max-height: 100px;
+  min-height: 80px;
+}
+.logo{
+  justify-self: flex-start;
+}
+
+.overlayForCotatie{
+  display: none;
+  overflow: hidden;
+  width: 100vw;
+  height: 750vh;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 10;
+}
+.content{
+  z-index: 2;
+}

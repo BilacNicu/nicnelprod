@@ -1,0 +1,278 @@
+.portofoliuBirouriDiv{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000511;
+  }
+  
+  /* Main Text and Picture Div */
+  
+  .mainTextAndPictureBirouri{
+    height: 85vh;
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTextAndPictureTopSideBirouri{
+     width: 100vw;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+  
+  .mainTextAndPictureBottomSideBirouri{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mainTextPicturePicBirouri{
+    margin-top: 80px;
+    height: 80vh;
+    width: 35vw;
+    position: absolute;
+    align-self: flex-end;
+    z-index: -1;
+  }
+  .mainTextPicturePic{
+    z-index: 3;
+  }
+  
+  .mainTextAndPictureTitleBirouri{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 8vw; 
+    margin-top: 15vh;
+  }
+  
+  .mainTextAndPictureTextBirouri{
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing:1.1;
+    margin-left: 8vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furniturePicsDiv {
+    width: 100vw;
+    height: auto; /* Change to auto for dynamic height */
+    min-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+  }
+
+  /* End of Main Text and Picture Div */
+
+  /* Start of Furniture Pictures Div */
+
+  .furnitureTypesPortofoliuBirouri{
+    width: 100vw;
+    height: 150vh;
+    max-width: 1500px;
+    min-width: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000511;
+  }
+
+  .furniture1Birouri, .furniture2Birouri, .furniture3Birouri, .furniture4Birouri, .furniture5Birouri, .furniture6Birouri{
+    width: 20vw;
+    min-width: 324px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+    cursor: pointer;
+  }
+  .furniture1OverlayBirouri, .furniture2OverlayBirouri, .furniture3OverlayBirouri{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+
+  }
+  .furniture1OverlayBirouri{
+    background-image: url("../assets/office1.jpg");
+    margin-top: -25vh;
+  }
+  .furniture4OverlayBirouri, .furniture5OverlayBirouri, .furniture6OverlayBirouri{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+  }
+
+  .furniture2OverlayBirouri{
+    margin-top: -10vh;
+    background-image: url("../assets/office2.jpg");
+  }
+
+  .furniture3OverlayBirouri{
+    margin-top: 15vh;
+    background-image: url("../assets/office3.jpg");
+  }
+
+  .furniture4OverlayBirouri{
+    background-image: url("../assets/office4.jpg");
+    margin-top: -40vh;
+  }
+
+  .furniture5OverlayBirouri{
+    margin-top: -25vh;
+    background-image: url("../assets/office5.jpg");
+  }
+
+  .furniture6OverlayBirouri{
+    margin-top: 0vh;
+    background-image: url("../assets/office6.jpg");
+  }
+
+  .rightAngleFurniture1Birouri, .rightAngleFurniture2Birouri, .rightAngleFurniture3Birouri, .rightAngleFurniture4Birouri, .rightAngleFurniture5Birouri, .rightAngleFurniture6Birouri{
+    width: 18vw;
+    height: 45vh;
+    border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .furniture1TitleBirouri, .furniture2TitleBirouri, .furniture3TitleBirouri, .furniture4TitleBirouri, .furniture5TitleBirouri, .furniture6TitleBirouri{
+    font-size: 3.5vh;
+    transition:all 0.3s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furniture1Birouri:hover .rightAngleFurniture1Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture1Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture1Birouri:hover .furniture1TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture1Birouri:hover .furniture1BtnBirouri{
+    opacity: 1;
+  }
+
+
+  .furniture2Birouri:hover .rightAngleFurniture2Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture2Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture2Birouri:hover .furniture2TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture2Birouri:hover .furniture2BtnBirouri{
+    opacity: 1;
+  }
+
+
+  .furniture3Birouri:hover .rightAngleFurniture3Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture3Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture3Birouri:hover .furniture3TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture3Birouri:hover .furniture3BtnBirouri{
+    opacity: 1;
+  }
+
+  .furniture4Birouri:hover .rightAngleFurniture4Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture4Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture4Birouri:hover .furniture4TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture4Birouri:hover .furniture4BtnBirouri{
+    opacity: 1;
+  }
+
+  .furniture5Birouri:hover .rightAngleFurniture5Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture5Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture5Birouri:hover .furniture5TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture5Birouri:hover .furniture5BtnBirouri{
+    opacity: 1;
+  }
+
+  .furniture6Birouri:hover .rightAngleFurniture6Birouri{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture6Birouri:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture6Birouri:hover .furniture6TitleBirouri{
+    margin-bottom: 20vh;
+  }
+  .furniture6Birouri:hover .furniture6BtnBirouri{
+    opacity: 1;
+  }
+
+  .furniture1BtnBirouri, .furniture2BtnBirouri, .furniture3BtnBirouri, .furniture4BtnBirouri, .furniture5BtnBirouri, .furniture6BtnBirouri{
+    position: absolute;
+    opacity: 0;
+    justify-self: flex-end;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+/* End of Furniture Pictures Div */
+
+  
+  @media (max-width: 1800px) and (min-width: 1300px){
+    .mainTextAndPictureTextBirouri{
+      font-size: 2.6vh;
+    }
+      
+    .mainTextAndPictureTitleBirouri{
+      margin-top: 10vh;
+    }
+  }

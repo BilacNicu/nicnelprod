@@ -1,0 +1,908 @@
+.toProjectsBtn {
+  background-color: transparent;
+  width: 320px;
+  height: 45px;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  position: relative;
+  color: rgb(210, 180, 140);
+  cursor: pointer;
+  --accent-color: rgb(210, 180, 140);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toProjectsBtn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+  transform-origin: left;
+}
+
+.toProjectsBtn:hover,
+.toProjectsBtn:focus{
+  color: black;
+}
+
+.toProjectsBtn:hover::before,
+.toProjectsBtn:focus::before{
+  transform: scaleX(1);
+  color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.contactBtn{
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  margin-left: 60px;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  --accent-color: white;
+  --border-size:2px;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contactBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: var(--accent-color);
+  transition: transform 0.3s ease-in-out;
+
+  transform: scaleX(0);
+}
+.contactBtn:hover::before,
+.contactBtn:focus::before {
+  transform: scaleX(1);
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.cotatieBtn {
+  background-color: transparent;
+  width: 260px;
+  height: 45px;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  margin-left: 2vw;
+  border: none;
+  outline: none;
+  position: relative;
+  color: rgb(210, 180, 140);
+  cursor: pointer;
+  --accent-color: rgb(210, 180, 140);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cotatieBtn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+}
+
+.cotatieBtn:hover,
+.cotatieBtn:focus{
+  color: black;
+}
+
+.cotatieBtn:hover::before,
+.cotatieBtn:focus::before{
+  transform: scaleX(1);
+  color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.dropdownPortofoliu {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dropdown-buttonPortofoliu{
+      background-color: transparent;
+      width: 160px;
+      height: 45px;
+      font-size: 1.8vh;
+      letter-spacing: 1px;
+      margin-left: 20px;
+      border: none;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      --accent-color: white;
+      --border-size:2px;
+  }
+  .dropdown-buttonPortofoliu::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transition: transform 0.3s ease-in-out;
+  
+    transform: scaleX(0);
+  }
+  .dropdown-buttonPortofoliu:hover::before,
+  .dropdown-buttonPortofoliu:focus::before{
+        transform: scaleX(1);
+  }
+
+  .dropdown-contentPortofoliu {
+    position: absolute;
+    width: 160px;
+    height: 14.6vh;
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 5px;
+  }
+  
+  .dropdownPortofoliu:hover .dropdown-contentPortofoliu{
+    opacity: 1;
+  }
+  
+  .dropdown-contentPortofoliu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ListPortofoliuBirouriBtn, .ListPortofoliuBucatariiBtn, .ListPortofoliuDormitoareBtn, .ListPortofoliuCamereDeZiBtn{
+    height: 4vh;
+    width: 160px;
+    font-size: 1.35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background-color: #000511;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ListPortofoliuBirouriBtn::before, .ListPortofoliuBucatariiBtn::before, 
+  .ListPortofoliuDormitoareBtn::before, .ListPortofoliuCamereDeZiBtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    border-radius: 3px;
+  }
+
+  .ListPortofoliuBirouriBtn:hover,
+  .ListPortofoliuBirouriBtn:focus, 
+  .ListPortofoliuBucatariiBtn:hover,
+  .ListPortofoliuBucatariiBtn:focus,
+  .ListPortofoliuDormitoareBtn:hover,
+  .ListPortofoliuDormitoareBtn:focus,
+  .ListPortofoliuCamereDeZiBtn:hover,
+  .ListPortofoliuCamereDeZiBtn:focus{
+    color: black;
+   }
+
+   
+  .ListPortofoliuBirouriBtn:hover::before,
+  .ListPortofoliuBirouriBtn:focus::before, 
+  .ListPortofoliuBucatariiBtn:hover::before,
+  .ListPortofoliuBucatariiBtn:focus::before,
+  .ListPortofoliuDormitoareBtn:hover::before,
+  .ListPortofoliuDormitoareBtn:focus::before,
+  .ListPortofoliuCamereDeZiBtn:hover::before,
+  .ListPortofoliuCamereDeZiBtn:focus::before{
+    transform: scaleX(1);
+    color: black;
+  }
+
+  .firstItem{
+    margin-top: 20px;
+  }
+
+  /*++++++++++++++++++++++++++++++++++++++++++*/
+
+  .dropdownInformatii {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .dropdown-buttonInformatii{
+    background-color: transparent;
+    width: 180px;
+    height: 45px;
+    font-size: 1.8vh;
+    letter-spacing: 1px;
+    margin-left: 20%;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    --accent-color: white;
+    --border-size:2px;
+  }
+  .dropdown-buttonInformatii::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--border-size);
+    background-color: var(--accent-color);
+    transition: transform 0.3s ease-in-out;
+  
+    transform: scaleX(0);
+  }
+
+  .dropdown-buttonInformatii:hover::before,
+  .dropdown-buttonInformatii:focus::before{
+    transform: scaleX(1);
+  }
+
+  .dropdown-contentInformatii {
+    position: absolute;
+    width: 180px;
+    height: 6.7vh;
+    margin-left: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdownInformatii:hover .dropdown-contentInformatii{
+    opacity: 1;
+  }
+  
+  .dropdown-contentInformatii ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ListInformatiiPoliticaCalitatiiBtn, .ListInformatiiDespreNoiBtn {
+    height: 4vh;
+    width: 180px;
+    font-size: 1.35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background-color: #000511;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .ListInformatiiPoliticaCalitatiiBtn::before, .ListInformatiiDespreNoiBtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    border-radius: 3px;
+  }
+
+  .ListInformatiiPoliticaCalitatiiBtn:hover,
+  .ListInformatiiPoliticaCalitatiiBtn:focus,
+  .ListInformatiiDespreNoiBtn:hover,
+  .ListInformatiiDespreNoiBtn:focus{
+    color: black;
+   }
+
+   .ListInformatiiPoliticaCalitatiiBtn:hover::before,
+   .ListInformatiiPoliticaCalitatiiBtn:focus::before,
+   .ListInformatiiDespreNoiBtn:hover::before,
+   .ListInformatiiDespreNoiBtn:focus::before{
+    transform: scaleX(1);
+    color: black;
+   }
+
+  .firstItem{
+    margin-top: 20px;
+  }
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.homeBtn{
+    background-color: transparent;
+    width: 140px;
+    height: 45px;
+    font-size: 1.8vh;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    --accent-color: white;
+    --border-size:2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.homeBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-size);
+  background-color: var(--accent-color);
+  transition: transform 0.3s ease-in-out;
+
+  transform: scaleX(0);
+}
+
+.homeBtn:hover::before,
+.homeBtn:focus::before {
+  transform: scaleX(1);
+}
+/*++++++++++++++++++++++++++++++++++++++++++*/
+.toProjectsBtn2 {
+background-color: transparent;
+width: 320px;
+height: 45px;
+font-size: 1.8vh;
+margin-left: 10vw;
+letter-spacing: 1px;
+border: none;
+outline: none;
+position: relative;
+color: rgb(210, 180, 140);
+cursor: pointer;
+--accent-color: rgb(210, 180, 140);
+z-index: 1;
+transition: all 0.3s ease-in-out;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toProjectsBtn2::before {
+content: '';
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+background-color: var(--accent-color);
+z-index: -1;
+transition: transform 0.3s ease-in-out;
+transform: scaleX(0);
+color: black;
+border-radius: 3px;
+transform-origin: left;
+}
+
+.toProjectsBtn2:hover,
+.toProjectsBtn2:focus{
+color: black;
+}
+
+.toProjectsBtn2:hover::before,
+.toProjectsBtn2:focus::before{
+transform: scaleX(1);
+color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+.despreNoiBtn {
+background-color: transparent;
+width: 350px;
+height: 45px;
+font-size: 1.8vh;
+letter-spacing: 1px;
+border: none;
+outline: none;
+position: relative;
+color: rgb(210, 180, 140);
+cursor: pointer;
+--accent-color: rgb(210, 180, 140);
+z-index: 1;
+transition: all 0.3s ease-in-out;
+border-radius: 3px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.despreNoiBtn::before {
+content: '';
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+background-color: var(--accent-color);
+z-index: -1;
+transition: transform 0.3s ease-in-out;
+transform: scaleX(0);
+color: black;
+transform-origin: left;
+border-radius: 3px;
+
+}
+
+.despreNoiBtn:hover,
+.despreNoiBtn:focus{
+color: black;
+}
+
+.despreNoiBtn:hover::before,
+.despreNoiBtn:focus::before{
+transform: scaleX(1);
+color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.locationBtn, .phoneBtn, .mailBtn{
+  width: 200px;
+  font-size: 1.8vh;
+  border-radius: 3px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: rgb(210, 180, 140);
+  background-color: transparent;
+  margin-right: 2vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.phoneBtn{
+  width: 160px;
+}
+
+.mailBtn{
+  margin-right: 5vw;
+}
+
+.phoneBtn:focus,
+.phoneBtn:focus-visible,
+.phoneBtn:hover,
+.mailBtn:focus,
+.mailBtn:focus-visible,
+.mailBtn:hover,
+.locationBtn:focus,
+.locationBtn:focus-visible,
+.locationBtn:hover{    
+  background-color: rgb(210, 180, 140);
+  color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.birouriBtn, .bucatariiBtn, .dormitoareBtn, .camereDeZiBtn{
+  margin-left: 2vw;
+  
+}
+
+.allBtn{
+  margin-left: 8vw;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.trimiteIntalnireBtn{
+  background-color: transparent;
+  width: 150px;
+  height: 45px;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  margin-left: 20%;
+  border: none;
+  outline: none;
+  position: relative;
+  color: rgb(210, 180, 140);
+  cursor: pointer;
+  --accent-color: rgb(210, 180, 140);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trimiteIntalnireBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+  transform-origin: left;
+}
+.trimiteIntalnireBtn:hover,
+.trimiteIntalnireBtn:focus{
+  color: black;
+}
+
+.trimiteIntalnireBtn:hover::before,
+.cotatieBtn:focus::before{
+  transform: scaleX(1);
+  color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.colectieBucatariiBtn, .colectieDormitoareBtn, .colectieCamereDeZiBtn, .colectieBirouriBtn{
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 45px;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  --accent-color: rgb(205, 133, 63);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.colectieBucatariiBtn::before, .colectieDormitoareBtn:before,
+.colectieCamereDeZiBtn::before, .colectieBirouriBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+  transform-origin: left;
+}
+
+.colectieBucatariiBtn:hover, .colectieBucatariiBtn:focus,
+ .colectieDormitoareBtn:hover, .colectieDormitoareBtn:focus,
+.colectieCamereDeZiBtn:hover, .colectieCamereDeZiBtn:focus,
+ .colectieBirouriBtn:hover, .colectieBirouriBtn:focus{
+  color: black;
+ }
+ .colectieBucatariiBtn:hover::before, .colectieBucatariiBtn:focus::before,
+ .colectieDormitoareBtn:hover::before, .colectieDormitoareBtn:focus::before,
+.colectieCamereDeZiBtn:hover::before, .colectieCamereDeZiBtn:focus::before,
+ .colectieBirouriBtn:hover::before, .colectieBirouriBtn:focus::before{
+  transform: scaleX(1);
+  color: black;
+ }
+
+
+ .camereDeZiBtn{
+  width: 260px;
+ }
+ .allBtn{
+  width: 100px;
+ }
+ .birouriBtn{
+  width: 130px;
+ }
+ .bucatariiBtn{
+  width: 150px;
+ }
+ .dormitoareBtn{
+  width: 200px;
+ }
+
+ .birouriBtn, .dormitoareBtn, .bucatariiBtn,
+  .allBtn, .camereDeZiBtn{
+  outline:none;
+  border: none;
+  background-color: transparent;
+  font-size: 2.5vh;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  --accent-color: white;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+ }
+
+ .birouriBtn::before, .dormitoareBtn::before, .bucatariiBtn::before,
+ .allBtn::before, .camereDeZiBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleY(0);
+  color: black;
+  border-radius: 3px;
+  transform-origin: top;
+ }
+
+ .birouriBtn:hover,  .birouriBtn:focus,
+  .dormitoareBtn:hover, .dormitoareBtn:focus, 
+  .bucatariiBtn:hover, .bucatariiBtn:focus,
+  .allBtn:hover, .allBtn:focus,
+  .camereDeZiBtn:hover, .camereDeZiBtn:focus{
+    color: black;
+ }
+
+ .birouriBtn:hover::before,  .birouriBtn:focus::before,
+  .dormitoareBtn:hover::before, .dormitoareBtn:focus::before, 
+  .bucatariiBtn:hover::before, .bucatariiBtn:focus::before,
+  .allBtn:hover::before, .allBtn:focus::before,
+  .camereDeZiBtn:hover::before, .camereDeZiBtn:focus::before{
+    transform: scaleY(1);
+
+  }
+/*++++++++++++++++++++++++++++++++++++++++++*/
+
+.homeBtn,.contactBtn, .birouriBtn,
+.toProjectsBtn, .cotatieBtn, .dropdown-buttonPortofoliu,   .dropdown-buttonInformatii, 
+.toProjectsBtn2, .despreNoiBtn , .mailBtn, .phoneBtn, .locationBtn, .birouriBtn,
+ .bucatariiBtn, .dormitoareBtn, .camereDeZiBtn, .allBtn, .trimiteIntalnireBtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.furnitureBtn{
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 45px;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  --accent-color: rgb(205, 133, 63);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.furnitureBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+  transform-origin: left;
+}
+.furnitureBtn:hover,
+.furnitureBtn:focus{
+  color: black;
+}
+
+.furnitureBtn:hover::before,
+.furnitureBtn:focus:before{
+  transform: scaleX(1);
+  color: black;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.trimiteCotatieBtn{
+  background-color: transparent;
+  width: 220px;
+  height: 45px;
+  font-size: 1.8vh;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  position: relative;
+  color: rgb(210, 180, 140);
+  cursor: pointer;
+  --accent-color: rgb(210, 180, 140);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trimiteCotatieBtn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  color: black;
+  border-radius: 3px;
+}
+
+.trimiteCotatieBtn:hover,
+.trimiteCotatieBtn:focus{
+  color: black;
+}
+
+.trimiteCotatieBtn:hover::before,
+.trimiteCotatieBtn:focus::before{
+  transform: scaleX(1);
+  color: black;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 1800px) and (min-width: 1300px){
+  .homeBtn{
+    font-size: 2.5vh;
+  }
+  .dropdown-buttonInformatii{
+    font-size: 2.5vh;
+  }
+  .dropdown-buttonPortofoliu{
+    font-size: 2.5vh;
+  }
+  .contactBtn{
+    font-size: 2.5vh;
+  }
+  .cotatieBtn{
+    font-size: 2.5vh;
+  }
+  .dropdown-contentPortofoliu {
+    height: 22vh;
+  }
+
+  .dropdown-contentInformatii {
+    height: 10vh;
+  }
+  .ListInformatiiPoliticaCalitatiiBtn, .ListInformatiiDespreNoiBtn {
+    height: 6vh;
+    font-size: 1.8vh;
+  }
+  .ListPortofoliuBirouriBtn, .ListPortofoliuBucatariiBtn, .ListPortofoliuDormitoareBtn, .ListPortofoliuCamereDeZiBtn{
+    height: 6vh;
+    font-size: 1.8vh;
+  }
+  .toProjectsBtn{
+    font-size: 2.5vh;
+    width: 300px;
+  }
+  .toProjectsBtn2{
+    font-size: 2.5vh;
+    width: 300px;
+  }
+  .despreNoiBtn{
+    font-size: 2.5vh;
+    width: 350px;
+  }
+  .trimiteIntalnireBtn{
+    font-size: 2vh;
+    width: 100px;
+    height: 35px;
+  }
+  .camereDeZiBtn{
+    width: 200px;
+   }
+   .allBtn{
+    width: 100px;
+   }
+   .birouriBtn{
+    width: 110px;
+   }
+   .bucatariiBtn{
+    width: 125px;
+   }
+   .furnitureBtn{
+    font-size: 2.2vh;
+    width: 180px;
+    height: 35px;
+   }
+   .colectieBucatariiBtn, .colectieDormitoareBtn, .colectieCamereDeZiBtn, .colectieBirouriBtn{
+    width: 180px;
+    font-size: 2.2vh;
+   }
+
+   .trimiteCotatieBtn{
+    font-size: 2.5vh;
+   }
+
+    .locationBtn, .phoneBtn, .mailBtn{
+      font-size: 1em;
+      width: 150px;
+    }
+    .phoneBtn{
+      width: 120px;
+    }
+}

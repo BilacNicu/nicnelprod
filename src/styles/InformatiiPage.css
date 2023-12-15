@@ -1,0 +1,144 @@
+
+.infoPageDiv{
+    margin-top: 8vh;
+    width: 100vw;
+    height: 150vh;
+    background-color: #000511;
+}
+
+.titleAndVideoDespreNoi{
+    height: 92vh;
+    width: 100vw;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .writingDespreNoi{
+    position: absolute;
+    top: 5vh;
+    left: 10vh;
+    width: 90vw;
+    height: 23vh;
+    z-index: 3;
+    min-width: 707px;
+  }
+  .videoContainerDespreNoi {
+    position: absolute;
+    right:0;
+    top: 2vh;
+    margin-left: 20px;
+    width: 70vw;
+    min-width: 800px;
+    height: 70vh;
+    z-index: 2;
+    filter: brightness(60%);
+  }
+  .backgroundVideoDespreNoi {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    /* Places the video behind the content */
+  }
+
+  .titluDespreNoi{
+    font-size: 4vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+    height: 30px;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  .textDespreNoi{
+    margin-top: 8vh;
+    font-size: 1.5rem;
+    z-index: 1;
+    height: 35vh;
+    width: 80vw;
+    color: white;
+    font-size: 1.5vw;
+    line-height: 1.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* Politica Calitatii */
+
+  
+  .titleAndVideoPoliticaCalitatii{
+    height: 92vh;
+    width: 100vw;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+  }
+  
+  .writingPoliticaCalitatii{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    left: 10vh;
+    width: 90vw;
+    height: 70vh;
+    z-index: 3;
+    min-width: 707px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .videoContainerPoliticaCalitatii {
+    position: relative;
+    right:0;
+    top: 2vh;
+    margin-left: 20px;
+    width: 33vw;
+    height: 63vh;
+    z-index: 2;
+    filter: brightness(60%);
+  }
+  .backgroundVideoPoliticaCalitatii{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+  }
+  .titlu1PoliticaCalitatii{
+    font-size: 4vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+    height: 30px;
+    letter-spacing: 2px;
+    width: 60vw;
+    
+  }
+  .titlu2PoliticaCalitatii{
+    font-size: 3vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+    height: 30px;
+    letter-spacing: 2px;
+    width: 60vw;
+  }
+  .textPoliticaCalitatii{
+    margin-top: 3vh;
+    font-size: 1.3vw;
+    z-index: 1;
+    height: 35vh;
+    width: 60vw;
+    color: white;
+    line-height: 1.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  @media screen and (max-width: 1500px)
+  {
+    .videoContainerPoliticaCalitatii {
+      position: relative;
+      right:0;
+      top: 2vh;
+      margin-left: 20px;
+      width: 33vw;
+      height: 75vh;
+      z-index: 2;
+      filter: brightness(60%);
+    }
+  }

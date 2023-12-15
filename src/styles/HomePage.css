@@ -1,0 +1,398 @@
+.homediv{
+  height: 180vh;
+  width: 100vw;
+}
+.titleAndVideo{
+  height: 92vh;
+  width: 100vw;
+  background-color: transparent;
+  position: relative;
+}
+
+.hiddenLeft{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.hiddenRight{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0);
+}
+
+.overlayHome:nth-child(2){
+    transition-delay: 200ms;
+}
+.overlayHome:nth-child(3){
+  transition-delay: 400ms;
+}
+.overlayHome:nth-child(4){
+  transition-delay: 600ms;
+}
+
+
+.writing{
+  position: absolute;
+  top: 30vh;
+  left: 10vh;
+  width: 45vw;
+  height: 23vh;
+  z-index: 3;
+  min-width: 707px;
+}
+.videoContainer {
+  position: absolute;
+  right:0;
+  top: 25vh;
+  margin-left: 20px;
+  width: 70vw;
+  min-width: 800px;
+  height: 50vh;
+  z-index: 2;
+}
+.backgroundVideo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+.titlu{
+  font-size: 45px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  z-index: 1;
+  height: 30px;
+}
+.textPrincipal1, .textPrincipal2{
+  margin-top: 0;
+  font-size: 50px;
+  font-weight:bold;
+  z-index: 1;
+  height: 25px;
+  color: white;
+}
+
+/* Start Info Div */ 
+
+.startInfo{
+  width: 100vw;
+  min-width: 1500px;
+  height: 50vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.startInfoLeftSide{
+  width: 40vw;
+  height: 60vh;
+}
+
+.startInfoRightSide{
+  width: 60vw;
+  min-height: 630px;
+  min-width: 972px;
+  height: 60vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.startTitle{
+  margin-bottom: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.startText{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* End of Start Info Div */ 
+
+/* Furniture Types Div */
+
+.furnitureTypes{
+  height: 70vh;
+  width: 100vw;
+  min-width: 1500px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000511;
+}
+
+.bucatarii, .dormitoare, .camereDeZi, .birouriSiComerciale{
+  width: 20vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:all 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+  cursor: pointer;
+}
+
+.bucatariiOverlay{
+  width: 20vw;
+  height: 50vh;
+  background-image: url("../assets/bucatarie.jpg");
+  background-size: cover;
+}
+
+.camereDeZiOverlay{
+  width: 20vw;
+  height: 50vh;
+  margin-left: 3vw;
+  background-image: url("../assets/living.webp");
+  background-size: cover;
+}
+
+.dormitoareOverlay{
+  width: 20vw;
+  height: 50vh;
+  margin-left: 3vw;
+  background-image: url("../assets/dormitor.webp");
+  background-size: cover;
+}
+
+.birouriSiComercialeOverlay{
+  width: 20vw;
+  margin-left: 3vw;
+  height: 50vh;
+  background-image: url("../assets/officeMain.jpg");
+  background-size: cover;
+}
+
+.rightAngleBucatarii, .rightAngleDormitoare,  .rightAngleCamereDeZi, .rightAngleBsiC{
+  width: 18vw;
+  height: 45vh;
+  border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.colectieBucatariiBtnDiv, .colectieDormitoareBtnDiv, .colectieCamereDeZiBtnDiv, .colectieBirouriBtnDiv{
+  height: 40px;
+  width: 180px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.bucatarii:hover .rightAngleBucatarii{
+  width: 17vw;
+  height: 44vh;
+  border-color: rgb(205, 133, 63);
+  
+}
+.bucatarii:hover{
+  background-color: rgba(0, 0, 0, 0.3);   
+}
+.bucatarii:hover .bucatariiTitle{
+  margin-bottom: 20vh;
+}
+.bucatarii:hover .colectieBucatariiBtnDiv{
+  opacity: 1;
+}
+
+.dormitoare:hover .rightAngleDormitoare{
+  width: 17vw;
+  height: 44vh;
+  border-color: rgb(205, 133, 63);
+}
+.dormitoare:hover{
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+.dormitoare:hover .dormitoareTitle{
+  margin-bottom: 20vh;
+}
+.dormitoare:hover .colectieDormitoareBtnDiv{
+  opacity: 1;
+}
+
+.camereDeZi:hover .rightAngleCamereDeZi{
+  width: 17vw;
+  height: 44vh;
+  border-color: rgb(205, 133, 63);
+}
+.camereDeZi:hover{
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+.camereDeZi:hover .camereDeZiTitle{
+  margin-bottom: 20vh;
+}
+.camereDeZiTitle{
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.camereDeZi:hover .colectieCamereDeZiBtnDiv{
+  opacity: 1;
+}
+.birouriSiComerciale:hover .rightAngleBsiC{
+  width: 17vw;
+  height: 44vh;
+  border-color: rgb(205, 133, 63);
+}
+.birouriSiComerciale:hover{
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+.birouriSiComerciale:hover .BsiCTitle{
+  margin-bottom: 20vh;
+}
+.birouriSiComerciale:hover .colectieBirouriBtnDiv{
+  opacity: 1;
+}
+
+.BsiCTitle, .camereDeZiTitle, .dormitoareTitle, .bucatariiTitle{
+  font-size: 4vh;
+  transition:all 0.3s ease-in-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.colectieBucatariiBtnDiv, .colectieDormitoareBtnDiv, .colectieCamereDeZiBtnDiv, .colectieBirouriBtnDiv{
+  position: absolute;
+  opacity: 0;
+  justify-self: flex-end;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+/* End Of Furniture Types Div */
+
+/* Start Of Second Text Div */
+
+.secondText{
+  width: 100vw;
+  min-width: 1500px;
+  height: 50vh;
+  max-height: 400px;
+  display: flex;
+  flex-direction: row;
+  background-color: #000511;
+}
+.leftSideSTxt{
+  width: 60vw;
+  height: 40vh;
+  max-height: 300px;
+  min-width: 730px;
+}
+.rightSideSTxt{
+  width: 40vw;
+  height: 40vh;
+  max-height: 300px;
+}
+.startSText{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-left: 10vw;
+  min-width: 730px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* End Of Second Text Div */
+
+/* Start Of Tata Lucrand Div */
+
+.tataLucrandTitle{
+  font-size: 6vh;
+  margin-bottom: 2vh;font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tataLucrandText{
+  font-size: 2vh;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tataLucrandDiv{
+  width: 100vw;
+  min-width: 1500px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000511;
+}
+.tataLucrandOverlay{
+  width: 65vw;
+  height: 65vh;
+  background-image: url("../assets/tataLucrand.jpg");
+  background-size: 100% 100%; 
+  min-width: 850px;
+}
+.tataLucrand{
+  width: 65vw;
+  min-width: 850px;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* End of Tata Lucrand Div */
+
+/* Start of Footer Div */
+
+.footer{
+  width: 100vw;
+  min-width: 1500px;
+  height: 12vh;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footerBarLeftSide{
+  width: 40vw;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 4vw;
+}
+.footerBarRightSide{  
+  width: 60vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.copyright{
+  margin-left: 2vw;
+  font-size: 0.7rem;
+  color: rgb(210, 180, 140);
+}
+
+.logo{
+  height: 10vh;
+}
+.colectieBucatariiBtnDiv, .colectieDormitoareBtnDiv, .colectieCamereDeZiBtnDiv, .colectieBirouriBtnDiv{
+  width: 200px;
+  height: 45px;
+}
+
+/* End of Footer Div */
+
+@media screen and (max-width: 1800px) and (min-width: 1300px){
+  .colectieBucatariiBtnDiv, .colectieDormitoareBtnDiv, .colectieCamereDeZiBtnDiv, .colectieBirouriBtnDiv{
+    width: 180px;
+  }
+}

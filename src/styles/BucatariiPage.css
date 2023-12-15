@@ -1,0 +1,264 @@
+.portofoliuBucatariiDiv{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000511;
+  }
+  
+  /* Main Text and Picture Div */
+  
+  .mainTextAndPictureBucatarii{
+    height: 85vh;
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTextAndPictureTopSideBucatarii{
+     width: 100vw;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+  
+  .mainTextAndPictureBottomSideBucatarii{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mainTextPicturePicBucatarii{
+    margin-top: 80px;
+    height: 80vh;
+    width: 35vw;
+    position: absolute;
+    align-self: flex-end;
+    z-index: 1;
+  }
+  
+  .mainTextAndPictureTitleBucatarii{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 8vw; 
+    margin-top: 15vh;
+  }
+  
+  .mainTextAndPictureTextBucatarii{
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing:1.1;
+    margin-left: 8vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* End of Main Text and Picture Div */
+
+  /* Start of Furniture Pictures Div */
+
+  .furnitureTypesPortofoliuBucatarii{
+    width: 100vw;
+    height: 150vh;
+    max-width: 1500px;
+    min-width: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000511;
+  }
+
+  .furniture1Bucatarii, .furniture2Bucatarii, .furniture3Bucatarii, .furniture4Bucatarii, .furniture5Bucatarii, .furniture6Bucatarii{
+    width: 20vw;
+    min-width: 324px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+    cursor: pointer;
+  }
+  .furniture1OverlayBucatarii, .furniture2OverlayBucatarii, .furniture3OverlayBucatarii{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+
+  }
+  .furniture4OverlayBucatarii, .furniture5OverlayBucatarii, .furniture6OverlayBucatarii{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+  }
+
+  .furniture1OverlayBucatarii{
+    background-image: url("../assets/bucatarie1.jpg");
+    margin-top: -25vh;
+  }
+
+  .furniture2OverlayBucatarii{
+    margin-top: -10vh;
+    background-image: url("../assets/bucatarie2.jpg");
+  }
+
+  .furniture3OverlayBucatarii{
+    margin-top: 15vh;
+    background-image: url("../assets/bucatarie3.jpg");
+  }
+
+  .furniture4OverlayBucatarii{
+    background-image: url("../assets/bucatarie4.jpg");
+    margin-top: -40vh;
+  }
+
+  .furniture5OverlayBucatarii{
+    margin-top: -25vh;
+    background-image: url("../assets/bucatarie5.jpg");
+  }
+
+  .furniture6OverlayBucatarii{
+    margin-top: 0vh;
+    background-image: url("../assets/bucatarie6.jpg");
+  }
+
+  .rightAngleFurniture1Bucatarii, .rightAngleFurniture2Bucatarii, .rightAngleFurniture3Bucatarii, .rightAngleFurniture4Bucatarii, .rightAngleFurniture5Bucatarii, .rightAngleFurniture6Bucatarii{
+    width: 18vw;
+    height: 45vh;
+    border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .furniture1TitleBucatarii, .furniture2TitleBucatarii, .furniture3TitleBucatarii, .furniture4TitleBucatarii, .furniture5TitleBucatarii, .furniture6TitleBucatarii{
+    font-size: 3.5vh;
+    transition:all 0.3s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furniture1Bucatarii:hover .rightAngleFurniture1Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture1Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture1Bucatarii:hover .furniture1TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture1Bucatarii:hover .furniture1BtnBucatarii{
+    opacity: 1;
+  }
+
+
+  .furniture2Bucatarii:hover .rightAngleFurniture2Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture2Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture2Bucatarii:hover .furniture2TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture2Bucatarii:hover .furniture2BtnBucatarii{
+    opacity: 1;
+  }
+
+
+  .furniture3Bucatarii:hover .rightAngleFurniture3Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture3Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture3Bucatarii:hover .furniture3TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture3Bucatarii:hover .furniture3BtnBucatarii{
+    opacity: 1;
+  }
+
+  .furniture4Bucatarii:hover .rightAngleFurniture4Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture4Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture4Bucatarii:hover .furniture4TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture4Bucatarii:hover .furniture4BtnBucatarii{
+    opacity: 1;
+  }
+
+  .furniture5Bucatarii:hover .rightAngleFurniture5Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture5Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture5Bucatarii:hover .furniture5TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture5Bucatarii:hover .furniture5BtnBucatarii{
+    opacity: 1;
+  }
+
+  .furniture6Bucatarii:hover .rightAngleFurniture6Bucatarii{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture6Bucatarii:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture6Bucatarii:hover .furniture6TitleBucatarii{
+    margin-bottom: 20vh;
+  }
+  .furniture6Bucatarii:hover .furniture6BtnBucatarii{
+    opacity: 1;
+  }
+
+  .furniture1BtnBucatarii, .furniture2BtnBucatarii, .furniture3BtnBucatarii, .furniture4BtnBucatarii, .furniture5BtnBucatarii, .furniture6BtnBucatarii{
+    position: absolute;
+    opacity: 0;
+    justify-self: flex-end;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+/* End of Furniture Pictures Div */
+
+@media (max-width: 1800px) and (min-width: 1300px){
+  .mainTextAndPictureTextBucatarii{
+    font-size: 2.6vh;
+  }
+    
+  .mainTextAndPictureTitleBucatarii{
+    margin-top: 10vh;
+  }
+}

@@ -1,0 +1,512 @@
+.overlayBg{
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 750vh;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.overlayContainer{
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+    padding: 30px;
+    padding-top: 0px;
+    width: 40vw;
+    height: 60vh;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+.overlayContainer.visible{
+    opacity: 1;
+}
+
+.overlayControls {
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.overlayClose{
+    border: none;
+    background-color: transparent;
+    color: rgb(210, 180, 140);
+    font-size: 50px;
+    cursor: pointer;
+    height: px;
+    transition: transform 0.3s ease; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.titluCotatie{
+    margin-left: 0;
+    font-size: 4vh;
+}
+
+.topDivCotatie{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+.numeCotatie{
+    margin-left: 2vw;
+    width: 16vw;
+    height: 4vh;
+    font-size: 1.5vh;
+    padding-left: 0.7vw;
+    padding-top: 0.9vh;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    outline: none;
+}
+.numeCotatieLabel{
+    position: absolute;
+    top: 12.1vh;
+    font-size: 2vh;
+    left: 4.15vw;
+    transition: all 0.2s ease-in-out;
+    cursor:text;
+}
+
+.numeCotatie:focus,
+.numeCotatie:hover{
+    border: 1px solid rgb(210, 180, 140);
+}
+
+.numeCotatie:focus ~ .numeCotatieLabel,
+.numeCotatie:hover ~ .numeCotatieLabel,
+.numeCotatie:valid ~ .numeCotatieLabel{
+    transform: translateY(-12px);
+    font-size: 1.2vh;
+    color: rgb(114, 114, 114);
+}
+
+
+.prenumeCotatie{
+    margin-right: 2vw;
+    width: 16vw;
+    height: 4vh;
+    font-size: 1.5vh;
+    padding-left: 0.7vw;
+    padding-top: 0.9vh;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 1px solid transparent;
+}
+.prenumeCotatieLabel{
+    position: absolute;
+    top: 12.1vh;
+    font-size: 2vh;
+    left: 23.25vw;
+    transition: all 0.2s ease-in-out;
+    cursor:text;
+}
+
+.prenumeCotatie:focus,
+.prenumeCotatie:hover
+{
+    border: 1px solid rgb(210, 180, 140);
+}
+
+
+.prenumeCotatie:focus ~ .prenumeCotatieLabel,
+.prenumeCotatie:hover ~ .prenumeCotatieLabel,
+.prenumeCotatie:valid ~ .prenumeCotatieLabel{
+    transform: translateY(-12px);
+    font-size: 1.2vh;
+    color: rgb(114, 114, 114);
+}
+
+.midDivCotatie{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+}
+.numarTelefonCotatie{
+    margin-left: 2vw;
+    width: 16vw;
+    height: 4vh;
+    font-size: 1.5vh;
+    padding-left: 0.7vw;
+    padding-top: 0.9vh;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 1px solid transparent;
+}
+.numarTelefonCotatieLabel{
+    position: absolute;
+    top: 19.15vh;
+    font-size: 2vh;
+    left: 4.15vw;
+    transition: all 0.2s ease-in-out;
+    cursor:text;
+}
+.numarTelefonCotatie:focus,
+.numarTelefonCotatie:hover{
+    border: 1px solid rgb(210, 180, 140);
+}
+
+.numarTelefonCotatie:focus ~ .numarTelefonCotatieLabel,
+.numarTelefonCotatie:hover ~ .numarTelefonCotatieLabel,
+.numarTelefonCotatie:valid ~ .numarTelefonCotatieLabel{
+    transform: translateY(-12px);
+    font-size: 1.2vh;
+    color: rgb(114, 114, 114);
+}
+
+
+.mailCotatie{
+    margin-right: 2vw;
+    width: 16vw;
+    height: 4vh;
+    font-size: 1.5vh;
+    padding-left: 0.7vw;
+    padding-top: 0.9vh;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    outline: none;
+}
+.mailCotatieLabel{
+    position: absolute;
+    top: 19.15vh;
+    font-size: 2vh;
+    left: 23.25vw;
+    transition: all 0.2s ease-in-out;
+    cursor:text;
+}
+.mailCotatie:focus,
+.mailCotatie:hover{
+    border: 1px solid rgb(210, 180, 140);
+}
+
+.mailCotatie:focus ~ .mailCotatieLabel,
+.mailCotatie:hover ~ .mailCotatieLabel,
+.mailCotatie:valid ~ .mailCotatieLabel{
+    transform: translateY(-12px);
+    font-size: 1.2vh;
+    color: rgb(114, 114, 114);
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.mesajCotatieDiv{
+ width: 100%;
+}
+.mesajCotatieInput{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 35.1vw;
+    height: 20vh;
+    margin-top: 3vh;
+    font-size: 1.5vh;
+    outline: none;
+    border: 1px solid transparent;
+    padding-left: 0.7vw;
+    padding-top: 2vh;
+    vertical-align:bottom;
+    transition: all 0.2s ease-in-out;
+    resize: none;
+}
+input:-webkit-autofill {
+    /* Your desired styles */
+    background-color: pink; /* Change the background color to your preference */
+    /* Additional styles */
+  }
+  
+.mesajCotatieLabel{
+    position: absolute;
+    top: 27.55vh;
+    font-size: 2vh;
+    left: 4.15vw;
+    transition: all 0.2s ease-in-out;
+    cursor:text;
+}
+.mesajCotatieInput:focus,
+.mesajCotatieInput:hover{
+    border: 1px solid rgb(210, 180, 140);
+}
+
+.mesajCotatieInput:focus ~ .mesajCotatieLabel,
+.mesajCotatieInput:hover ~ .mesajCotatieLabel,
+.mesajCotatieInput:valid ~ .mesajCotatieLabel{
+    transform: translateY(-12px);
+    font-size: 1.2vh;
+    color: rgb(114, 114, 114);
+}
+
+.lowerCotatieDiv{
+    width: 36vw;
+    height: 6vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.acordPoliticaDeConfidentialitate{
+    margin-left: 5px;
+    font-size: 1.7vh;
+}
+.politicaDeConfidentialitateCotatie{
+    background-color: rgb(210, 180, 140);
+    height: 16px;
+    width: 20px;
+}
+
+.lowestCotatieDiv{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1800px) and (min-width: 1300px) {
+    .overlayContainer{
+        background-color: rgb(34, 34, 34);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index: 10;
+        padding: 30px;
+        padding-top: 0px;
+        width: 40vw;
+        height: 67vh;
+        border-radius: 3px;
+    }    
+    .topDivCotatie{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .numeCotatie{
+        margin-left: 2vw;
+        width: 16vw;
+        height: 6vh;
+        font-size: 2.5vh;
+        padding-left: 0.7vw;
+        padding-top: 0.9vh;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+        outline: none;
+    }
+    .numeCotatieLabel{
+        position: absolute;
+        top: 11.7vh;
+        font-size: 2.7vh;
+        left: 4.5vw;
+        transition: all 0.2s ease-in-out;
+        cursor:text;
+    }
+    
+    .numeCotatie:focus,
+    .numeCotatie:hover{
+        border: 1px solid rgb(210, 180, 140);
+    }
+    
+    .numeCotatie:focus ~ .numeCotatieLabel,
+    .numeCotatie:hover ~ .numeCotatieLabel,
+    .numeCotatie:valid ~ .numeCotatieLabel{
+        transform: translateY(-12px);
+        font-size: 1.7vh;
+        color: rgb(114, 114, 114);
+    }
+    
+    
+    .prenumeCotatie{
+        margin-right: 2vw;
+        width: 16vw;
+        height: 6vh;
+        font-size: 2.5vh;
+        padding-left: 0.7vw;
+        padding-top: 0.9vh;
+        transition: all 0.2s ease-in-out;
+        outline: none;
+        border: 1px solid transparent;
+    }
+    .prenumeCotatieLabel{
+        position: absolute;
+        top: 11.7vh;
+        font-size: 2.7vh;
+        left: 23.55vw;
+        transition: all 0.2s ease-in-out;
+        cursor:text;
+    }
+    
+    .prenumeCotatie:focus,
+    .prenumeCotatie:hover
+    {
+        border: 1px solid rgb(210, 180, 140);
+    }
+    
+    
+    .prenumeCotatie:focus ~ .prenumeCotatieLabel,
+    .prenumeCotatie:hover ~ .prenumeCotatieLabel,
+    .prenumeCotatie:valid ~ .prenumeCotatieLabel{
+        transform: translateY(-12px);
+        font-size: 1.7vh;
+        color: rgb(114, 114, 114);
+    }
+    
+    .midDivCotatie{
+        display: flex;
+        margin-top: 2vh;
+        justify-content: space-between;
+    }
+    .numarTelefonCotatie{
+        margin-left: 2vw;
+        width: 16vw;
+        height: 6vh;
+        font-size: 2.5vh;
+        padding-left: 0.7vw;
+        padding-top: 0.9vh;
+        transition: all 0.2s ease-in-out;
+        outline: none;
+        border: 1px solid transparent;
+    }
+    .numarTelefonCotatieLabel{
+        position: absolute;
+        top: 20.95vh;
+        font-size: 2.7vh;
+        left: 4.5vw;
+        transition: all 0.2s ease-in-out;
+        cursor:text;
+    }
+    .numarTelefonCotatie:focus,
+    .numarTelefonCotatie:hover{
+        border: 1px solid rgb(210, 180, 140);
+    }
+    
+    .numarTelefonCotatie:focus ~ .numarTelefonCotatieLabel,
+    .numarTelefonCotatie:hover ~ .numarTelefonCotatieLabel,
+    .numarTelefonCotatie:valid ~ .numarTelefonCotatieLabel{
+        transform: translateY(-12px);
+        font-size: 1.7vh;
+        color: rgb(114, 114, 114);
+    }
+    
+    
+    .mailCotatie{
+        margin-right: 2vw;
+        width: 16vw;
+        height: 6vh;
+        font-size: 2.5vh;
+        padding-left: 0.7vw;
+        padding-top: 0.9vh;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+        outline: none;
+    }
+    .mailCotatieLabel{
+        position: absolute;
+        top: 20.95vh;
+        font-size: 2.7vh;
+        left: 23.55vw;
+        transition: all 0.2s ease-in-out;
+        cursor:text;
+    }
+    .mailCotatie:focus,
+    .mailCotatie:hover{
+        border: 1px solid rgb(210, 180, 140);
+    }
+    
+    .mailCotatie:focus ~ .mailCotatieLabel,
+    .mailCotatie:hover ~ .mailCotatieLabel,
+    .mailCotatie:valid ~ .mailCotatieLabel{
+        transform: translateY(-12px);
+        font-size: 1.7vh;
+        color: rgb(114, 114, 114);
+    }
+    
+    /*++++++++++++++++++++++++++++++++++++++++++++++++*/
+    
+    .mesajCotatieDiv{
+     width: 100%;
+    }
+    .mesajCotatieInput{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 35.1vw;
+        height: 20vh;
+        margin-top: 3vh;
+        font-size: 2.5vh;
+        outline: none;
+        border: 1px solid transparent;
+        padding-left: 0.7vw;
+        padding-top: 2.8vh;
+        transition: all 0.2s ease-in-out;
+        resize: none;
+    }
+    input:-webkit-autofill {
+        /* Your desired styles */
+        background-color: pink; /* Change the background color to your preference */
+        /* Additional styles */
+      }
+      
+    .mesajCotatieLabel{
+        position: absolute;
+        top: 31.4vh;
+        font-size: 2.75vh;
+        left: 4.5vw;
+        transition: all 0.2s ease-in-out;
+        cursor:text;
+    }
+    .mesajCotatieInput:focus,
+    .mesajCotatieInput:hover{
+        border: 1px solid rgb(210, 180, 140);
+    }
+    
+    .mesajCotatieInput:focus ~ .mesajCotatieLabel,
+    .mesajCotatieInput:hover ~ .mesajCotatieLabel,
+    .mesajCotatieInput:valid ~ .mesajCotatieLabel{
+        transform: translateY(-12px);
+        font-size: 1.7vh;
+        color: rgb(114, 114, 114);
+    }
+    
+    .lowerCotatieDiv{
+        width: 36vw;
+        height: 9vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .acordPoliticaDeConfidentialitate{
+        margin-left: 5px;
+        font-size: 2.4vh;
+    }
+    .politicaDeConfidentialitateCotatie{
+        background-color: rgb(210, 180, 140);
+        height: 16px;
+        width: 20px;
+    }
+    
+    .lowestCotatieDiv{
+        display: flex;
+        justify-content: center;
+    }
+
+    .overlayControls{
+        margin-bottom: 15px;
+    }
+
+
+}

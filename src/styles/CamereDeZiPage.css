@@ -1,0 +1,277 @@
+.portofoliuCamereDeZiDiv{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000511;
+  }
+  
+  /* Main Text and Picture Div */
+
+  .overlayFR1:nth-child(2){
+    transition-delay: 200ms;
+}
+.overlayFR1:nth-child(3){
+  transition-delay: 400ms;
+}
+.overlayFR2:nth-child(2){
+  transition-delay: 200ms;
+}
+.overlayFR2:nth-child(1){
+  transition-delay: 400ms;
+}
+.show{
+  opacity: 1;
+}
+  
+  .mainTextAndPictureCamereDeZi{
+    height: 85vh;
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTextAndPictureTopSideCamereDeZi{
+     width: 100vw;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+  
+  .mainTextAndPictureBottomSideCamereDeZi{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mainTextPicturePicCamereDeZi{
+    margin-top: 80px;
+    height: 80vh;
+    width: 35vw;
+    position: absolute;
+    align-self: flex-end;
+    z-index: 1;
+  }
+  
+  .mainTextAndPictureTitleCamereDeZi{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 8vw; 
+    margin-top: 15vh;
+  }
+  
+  .mainTextAndPictureTextCamereDeZi{
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing:1.1;
+    margin-left: 8vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+    /* Start of Furniture Pictures Div */
+
+    .furnitureTypesPortofoliuCamereDeZi{
+      width: 100vw;
+      height: 150vh;
+      max-width: 1500px;
+      min-width: 1500px;
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 10vh;
+      flex-direction: row; 
+      justify-content:center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #000511;
+    }
+  
+    .furniture1CamereDeZi, .furniture2CamereDeZi, .furniture3CamereDeZi, .furniture4CamereDeZi, .furniture5CamereDeZi, .furniture6CamereDeZi{
+      width: 20vw;
+      min-width: 324px;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition:all 0.3s ease-in-out;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+      cursor: pointer;
+    }
+    .furniture1OverlayCamereDeZi, .furniture2OverlayCamereDeZi, .furniture3OverlayCamereDeZi{
+      width: 20vw;
+      height: 50vh;
+      min-width: 324px;
+      background-size: cover;
+    }
+    .furniture4OverlayCamereDeZi, .furniture5OverlayCamereDeZi, .furniture6OverlayCamereDeZi{
+      width: 20vw;
+      height: 50vh;
+      min-width: 324px;
+      background-size: cover;
+    }
+
+    .furniture1OverlayCamereDeZi{
+      background-image: url("../assets/living1.jfif");
+      margin-top: -25vh;
+    }
+  
+    .furniture2OverlayCamereDeZi{
+      background-image: url("../assets/living2.jpg");
+      margin-top: -10vh;
+    }
+  
+    .furniture3OverlayCamereDeZi{
+      margin-top: 15vh;
+      background-image: url("../assets/living3.jpg");
+    }
+
+    .furniture4OverlayCamereDeZi{
+      background-image: url("../assets/living4.webp");
+      margin-top: -40vh;
+    }
+  
+    .furniture5OverlayCamereDeZi{
+      margin-top: -25vh;
+      background-image: url("../assets/living5.jpg");
+    }
+  
+    .furniture6OverlayCamereDeZi{
+      margin-top: 0vh;
+      background-image: url("../assets/living6.jpg");
+    }
+  
+    .rightAngleFurniture1CamereDeZi, .rightAngleFurniture2CamereDeZi, .rightAngleFurniture3CamereDeZi, .rightAngleFurniture4CamereDeZi, .rightAngleFurniture5CamereDeZi, .rightAngleFurniture6CamereDeZi{
+      width: 18vw;
+      height: 45vh;
+      border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .furniture1TitleCamereDeZi, .furniture2TitleCamereDeZi, .furniture3TitleCamereDeZi, .furniture4TitleCamereDeZi, .furniture5TitleCamereDeZi, .furniture6TitleCamereDeZi{
+      font-size: 3.5vh;
+      transition:all 0.3s ease-in-out;
+      font-family:Georgia, 'Times New Roman', Times, serif
+    }
+  
+    .furniture1CamereDeZi:hover .rightAngleFurniture1CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture1CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture1CamereDeZi:hover .furniture1TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture1CamereDeZi:hover .furniture1BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+  
+    .furniture2CamereDeZi:hover .rightAngleFurniture2CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture2CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture2CamereDeZi:hover .furniture2TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture2CamereDeZi:hover .furniture2BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+  
+    .furniture3CamereDeZi:hover .rightAngleFurniture3CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture3CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture3CamereDeZi:hover .furniture3TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture3CamereDeZi:hover .furniture3BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+    .furniture4CamereDeZi:hover .rightAngleFurniture4CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture4CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture4CamereDeZi:hover .furniture4TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture4CamereDeZi:hover .furniture4BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+    .furniture5CamereDeZi:hover .rightAngleFurniture5CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture5CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture5CamereDeZi:hover .furniture5TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture5CamereDeZi:hover .furniture5BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+    .furniture6CamereDeZi:hover .rightAngleFurniture6CamereDeZi{
+      width: 17vw;
+      height: 44vh;
+      border-color: rgb(205, 133, 63);
+    }
+    .furniture6CamereDeZi:hover{
+      background-color: rgba(0, 0, 0, 0.3);   
+    }
+    .furniture6CamereDeZi:hover .furniture6TitleCamereDeZi{
+      margin-bottom: 20vh;
+    }
+    .furniture6CamereDeZi:hover .furniture6BtnCamereDeZi{
+      opacity: 1;
+    }
+  
+    .furniture1BtnCamereDeZi, .furniture2BtnCamereDeZi, .furniture3BtnCamereDeZi, .furniture4BtnCamereDeZi, .furniture5BtnCamereDeZi, .furniture6BtnCamereDeZi{
+      position: absolute;
+      opacity: 0;
+      justify-self: flex-end;
+      margin-bottom: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+  /* End of Main Text and Picture Div */
+
+  @media (max-width: 1800px) and (min-width: 1300px){
+    .mainTextAndPictureTextCamereDeZi{
+      font-size: 2.6vh;
+    }
+      
+    .mainTextAndPictureTitleCamereDeZi{
+      margin-top: 10vh;
+    }
+  }

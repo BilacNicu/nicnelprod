@@ -1,0 +1,302 @@
+.portofoliuDiv{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.overlayFR1:nth-child(2){
+    transition-delay: 200ms;
+}
+.overlayFR1:nth-child(3){
+  transition-delay: 400ms;
+}
+.overlayFR2:nth-child(2){
+  transition-delay: 200ms;
+}
+.overlayFR2:nth-child(1){
+  transition-delay: 400ms;
+}
+
+  
+  /* Main Text and Picture Div */
+  
+  .mainTextAndPicture{
+    height: 85vh;
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTextAndPictureTopSide{
+     width: 100vw;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+  
+  .mainTextAndPictureBottomSide{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mainTextPicturePic{
+    margin-top: 80px;
+    height: 80vh;
+    width: 35vw;
+    position: absolute;
+    align-self: flex-end;
+    z-index: -1;
+  }
+  
+  .mainTextAndPictureTitle{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 8vw; 
+    margin-top: 15vh;
+  }
+  
+  .mainTextAndPictureText{
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing:1.1;
+    margin-left: 8vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furnitureTypesAll1, .furnitureTypesAll2{
+    width: 100vw;
+    height: 300vh;
+    background-color: #000511;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* End of Main Text and Picture Div */
+
+  .titluPortofoliuBucatarii, .titluPortofoliuBirouri, .titluPortofoliuCamereDeZi, .titluPortofoliuDormitoare{
+    font-size: 5vh;
+    margin-left: 50px;
+    background-color: #000511;
+    align-self: flex-start;
+    margin-left: 10vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furnitureTypesPortofoliuBirouriAll, .furnitureTypesPortofoliuBucatariiAll, .furnitureTypesPortofoliuDormitoareAll, .furnitureTypesPortofoliuCamereDeZiAll{
+    width: 100vw;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    background-color: #000511;
+  }
+
+  
+
+  /* Start of Furniture Pictures Div */
+
+  .furnitureTypesPortofoliu{
+    width: 100vw;
+    height: 500vh;
+    max-width: 1500px;
+    min-width: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .furniture1, .furniture2, .furniture3, .furniture4, .furniture5, .furniture6{
+    width: 20vw;
+    min-width: 324px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+    cursor: pointer;
+  }
+  .furniture1Overlay, .furniture2Overlay, .furniture3Overlay{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-image: url("../assets/mobila1.webp");
+    background-size: cover;
+    margin-bottom: -350px;
+    margin-top: -20vh;
+  }
+  .furniture4Overlay, .furniture5Overlay, .furniture6Overlay{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-image: url("../assets/mobila1.webp");
+    background-size: cover;
+  }
+  .furniture2Overlay{
+  margin-top: -20vh; 
+  background-image: url("../assets/living2.webp");
+}
+  .furniture2Overlay{
+    margin-top: 15vh;
+    background-image: url("../assets/living2.webp");
+  }
+
+  .furniture3Overlay{
+    margin-top: 30vh;
+    background-image: url("../assets/living2.jpg");
+  }
+
+  .furniture5Overlay{
+    margin-top: 15vh;
+    background-image: url("../assets/living2.webp");
+  }
+
+  .furniture6Overlay{
+    margin-top: 30vh;
+    background-image: url("../assets/living2.jpg");
+  }
+
+  .rightAngleFurniture1, .rightAngleFurniture2, .rightAngleFurniture3, .rightAngleFurniture4, .rightAngleFurniture5, .rightAngleFurniture6{
+    width: 18vw;
+    height: 45vh;
+    border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .furniture1Title, .furniture2Title, .furniture3Title, .furniture4Title, .furniture5Title, .furniture6Title{
+    font-size: 2rem;
+    transition:all 0.3s ease-in-out;
+  }
+
+  .furniture1:hover .rightAngleFurniture1{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture1:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture1:hover .furniture1Title{
+    margin-bottom: 20vh;
+  }
+  .furniture1:hover .furniture1Btn{
+    opacity: 1;
+  }
+
+
+  .furniture2:hover .rightAngleFurniture2{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture2:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture2:hover .furniture2Title{
+    margin-bottom: 20vh;
+  }
+  .furniture2:hover .furniture2Btn{
+    opacity: 1;
+  }
+
+
+  .furniture3:hover .rightAngleFurniture3{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture3:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture3:hover .furniture3Title{
+    margin-bottom: 20vh;
+  }
+  .furniture3:hover .furniture3Btn{
+    opacity: 1;
+  }
+
+  .furniture4:hover .rightAngleFurniture4{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture4:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture4:hover .furniture4Title{
+    margin-bottom: 20vh;
+  }
+  .furniture4:hover .furniture4Btn{
+    opacity: 1;
+  }
+
+  .furniture5:hover .rightAngleFurniture5{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture5:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture5:hover .furniture5Title{
+    margin-bottom: 20vh;
+  }
+  .furniture5:hover .furniture5Btn{
+    opacity: 1;
+  }
+
+  .furniture6:hover .rightAngleFurniture6{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture6:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture6:hover .furniture6Title{
+    margin-bottom: 20vh;
+  }
+  .furniture6:hover .furniture6Btn{
+    opacity: 1;
+  }
+
+  .furniture1Btn, .furniture2Btn, .furniture3Btn, .furniture4Btn, .furniture5Btn, .furniture6Btn{
+    position: absolute;
+    opacity: 0;
+    justify-self: flex-end;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+/* End of Furniture Pictures Div */
+
+@media (max-width: 1650px){
+  .mainTextAndPictureText{
+    font-size: 1.3rem;
+  }
+}

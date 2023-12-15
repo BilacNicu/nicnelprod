@@ -1,0 +1,81 @@
+.portofoliuDiv{
+  height: 250vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hiddenLeft{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.hiddenRight{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0);
+}
+
+/* Main Text and Picture Div */
+
+.mainTextAndPicture{
+  height: 85vh;
+  margin-top: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTextAndPictureTopSide{
+   width: 100vw;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-end;
+}
+
+.mainTextAndPictureBottomSide{
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainTextPicturePic{
+  margin-top: 80px;
+  height: 80vh;
+  width: 35vw;
+  position: absolute;
+  align-self: flex-end;
+  z-index: -1;
+}
+
+.mainTextAndPictureTitle{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 8vw; 
+}
+
+.mainTextAndPictureText{
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing:1.1;
+  margin-left: 8vw; 
+  margin-top: 5vh; 
+  margin-bottom: 5vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* End of Main Text and Picture Div */
+

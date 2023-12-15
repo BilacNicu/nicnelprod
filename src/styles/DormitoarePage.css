@@ -1,0 +1,265 @@
+.portofoliuDormitoareDiv{
+    height: 250vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000511;
+  }
+  
+  /* Main Text and Picture Div */
+  
+  .mainTextAndPictureDormitoare{
+    height: 85vh;
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainTextAndPictureTopSideDormitoare{
+     width: 100vw;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+  }
+  
+  .mainTextAndPictureBottomSideDormitoare{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mainTextPicturePicDormitoare{
+    margin-top: 80px;
+    height: 80vh;
+    width: 35vw;
+    position: absolute;
+    align-self: flex-end;
+    z-index: 1;
+  }
+  
+  .mainTextAndPictureTitleDormitoare{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 8vw; 
+    margin-top: 15vh;
+  }
+  
+  .mainTextAndPictureTextDormitoare{
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing:1.1;
+    margin-left: 8vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* End of Main Text and Picture Div */
+
+  /* Start of Furniture Types Dormitor */
+
+  .furnitureTypesPortofoliuDormitoare{
+    width: 100vw;
+    height: 150vh;
+    max-width: 1500px;
+    min-width: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10vh;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000511;
+  }
+
+  .furniture1Dormitoare, .furniture2Dormitoare, .furniture3Dormitoare, .furniture4Dormitoare, .furniture5Dormitoare, .furniture6Dormitoare{
+    width: 20vw;
+    min-width: 324px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7) 100%);
+    cursor: pointer;
+  }
+  .furniture1OverlayDormitoare, .furniture2OverlayDormitoare, .furniture3OverlayDormitoare{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+  }
+  .furniture4OverlayDormitoare, .furniture5OverlayDormitoare, .furniture6OverlayDormitoare{
+    width: 20vw;
+    height: 50vh;
+    min-width: 324px;
+    background-size: cover;
+  }
+
+  .furniture1OverlayDormitoare{
+    background-image: url("../assets/dormitor1.jpeg");
+    margin-top: -25vh;
+  }
+
+  .furniture2OverlayDormitoare{
+    margin-top: 15vh;
+    background-image: url("../assets/dormitor2.jpg");
+    margin-top: -10vh;
+  }
+
+  .furniture3OverlayDormitoare{
+    margin-top: 15vh;
+    background-image: url("../assets/dormitor3.jfif");
+  }
+
+  .furniture4OverlayDormitoare{
+    background-image: url("../assets/dormitor4.jpeg");
+    margin-top: -40vh;
+  }
+
+
+  .furniture5OverlayDormitoare{
+    margin-top: -25vh;
+    background-image: url("../assets/dormitor5.jpg");
+  }
+
+  .furniture6OverlayDormitoare{
+    margin-top: 0vh;
+    background-image: url("../assets/dormitor6.jpg");
+  }
+
+  .rightAngleFurniture1Dormitoare, .rightAngleFurniture2Dormitoare, .rightAngleFurniture3Dormitoare, .rightAngleFurniture4Dormitoare, .rightAngleFurniture5Dormitoare, .rightAngleFurniture6Dormitoare{
+    width: 18vw;
+    height: 45vh;
+    border: 0.25vw solid rgb(210, 180, 140); /* Border around the div */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .furniture1TitleDormitoare, .furniture2TitleDormitoare, .furniture3TitleDormitoare, .furniture4TitleDormitoare, .furniture5TitleDormitoare, .furniture6TitleDormitoare{
+    font-size: 3.5vh;
+    transition:all 0.3s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .furniture1Dormitoare:hover .rightAngleFurniture1Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture1Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture1Dormitoare:hover .furniture1TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture1Dormitoare:hover .furniture1BtnDormitoare{
+    opacity: 1;
+  }
+
+
+  .furniture2Dormitoare:hover .rightAngleFurniture2Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture2Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture2Dormitoare:hover .furniture2TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture2Dormitoare:hover .furniture2BtnDormitoare{
+    opacity: 1;
+  }
+
+
+  .furniture3Dormitoare:hover .rightAngleFurniture3Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture3Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture3Dormitoare:hover .furniture3TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture3Dormitoare:hover .furniture3BtnDormitoare{
+    opacity: 1;
+  }
+
+  .furniture4Dormitoare:hover .rightAngleFurniture4Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture4Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture4Dormitoare:hover .furniture4TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture4Dormitoare:hover .furniture4BtnDormitoare{
+    opacity: 1;
+  }
+
+  .furniture5Dormitoare:hover .rightAngleFurniture5Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture5Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture5Dormitoare:hover .furniture5TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture5Dormitoare:hover .furniture5BtnDormitoare{
+    opacity: 1;
+  }
+
+  .furniture6Dormitoare:hover .rightAngleFurniture6Dormitoare{
+    width: 17vw;
+    height: 44vh;
+    border-color: rgb(205, 133, 63);
+  }
+  .furniture6Dormitoare:hover{
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+  .furniture6Dormitoare:hover .furniture6TitleDormitoare{
+    margin-bottom: 20vh;
+  }
+  .furniture6Dormitoare:hover .furniture6BtnDormitoare{
+    opacity: 1;
+  }
+
+  .furniture1BtnDormitoare, .furniture2BtnDormitoare, .furniture3BtnDormitoare, .furniture4BtnDormitoare, .furniture5BtnDormitoare, .furniture6BtnDormitoare{
+    position: absolute;
+    opacity: 0;
+    justify-self: flex-end;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+/* End of Furniture Pictures Div */
+
+@media (max-width: 1800px) and (min-width: 1300px){
+  .mainTextAndPictureTextDormitoare{
+    font-size: 2.6vh;
+  }
+    
+  .mainTextAndPictureTitleDormitoare{
+    margin-top: 10vh;
+  }
+}
