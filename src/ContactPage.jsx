@@ -7,7 +7,7 @@ import TimePicker from 'react-time-picker';
 import 'react-time-picker/dist/TimePicker.css';
 import AnimatedPage from './components/animations/AnimationPage';
 import logo from "../public/react.png";
-import bgContact from "./assets/bgContact.PNG";
+import bgContact from "./assets/bgContact.png";
 
 const ContactPage = () => {
 
