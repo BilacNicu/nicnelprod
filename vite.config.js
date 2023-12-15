@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/nicnelprod/",
   plugins: [react()],
+  optimizeDeps: {
+    include: ['*.png', '*.jpg', '*.mp4'] 
+  }
 })
