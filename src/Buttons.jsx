@@ -39,7 +39,7 @@ const ScrollToTopButtonWithLink = ({ to, children, className }) => {
 
 export const HomeBtn = () => {
     return (
-      <ScrollToTopButtonWithLink to="/acasa/" className="homeBtn">
+      <ScrollToTopButtonWithLink to="/" className="homeBtn">
       Acasa
     </ScrollToTopButtonWithLink>
       
